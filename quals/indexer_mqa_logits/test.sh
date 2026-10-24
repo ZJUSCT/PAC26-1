@@ -1,0 +1,11 @@
+set -e
+source /fs_real_a800/PAC2026/HPCKit26/HPCKit/latest/setvars.sh >/dev/null 2>&1
+
+NUM_THREADS=38
+OMP_NUM_THREADS=$NUM_THREADS OMP_THREAD_LIMIT=76 \
+    OMP_PLACES=cores OMP_PROC_BIND=close OMP_DYNAMIC=false \
+    OMP_WAIT_POLICY=ACTIVE KMP_BLOCKTIME=infinite KMP_USE_YIELD=0 \
+    KMP_FORKJOIN_BARRIER=3,3 \
+    KMP_FORKJOIN_BARRIER_PATTERN=dist,dist \
+    KMP_FORKJOIN_FRAMES=false KMP_STACKOFFSET=0 \
+    taskset -c 0-$((NUM_THREADS - 1)) ./main

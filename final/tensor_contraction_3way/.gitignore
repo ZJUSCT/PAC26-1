@@ -1,0 +1,10 @@
+/tensor_data/
+/tensor_contraction_3way_mpi
+/generate_tensor_data
+/verify_result
+/build/
+/jobs/
+/results/
+*.log
+*.o
+/.integration/
