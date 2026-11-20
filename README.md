@@ -1,5 +1,7 @@
 # ZJUSCT PAC26-1 Archive
 
+本仓库收录了 **HwHiAIUser** 队在 **第十三届并行应用挑战赛（PAC 2026）** 初赛和决赛中的优化方案与答辩材料，获优化组 **一等奖（2/242）**。
+
 Authors (in no particular order): **[Liheng Hu](https://github.com/ckyasb)**, **[Hao Yi](https://github.com/eWloYW8)**, **[Tianyang Liu](https://github.com/jjsnam)**, **[Guanyi Zhou](https://github.com/Kwannyyy)**  
 
 ### 初赛
